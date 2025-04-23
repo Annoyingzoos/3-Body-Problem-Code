@@ -17,7 +17,6 @@ def compute_accelerations(bodies):
                 acc += G * bj.mass * r / np.linalg.norm(r)**3
         bi.acceleration = acc
 
-# === Velocity Verlet Integration ===
 def velocity_verlet(bodies, dt, steps):
     positions = {b.name: np.zeros((steps, 3)) for b in bodies}
     compute_accelerations(bodies)
@@ -34,7 +33,6 @@ def velocity_verlet(bodies, dt, steps):
 
     return positions
 
-# === Editable Initial Conditions ===
 initial_conditions = [
     {
         "name": "Sun",
@@ -46,13 +44,13 @@ initial_conditions = [
         "name": "Jupiter",
         "mass": 0.000954536311,
         "position": [22, 7, 9.0],
-        "velocity": [-0, -0.1, -0.1],  # AU/yr
+        "velocity": [-0, -0.1, -0.1], 
     },
     {
         "name": "Saturn",
         "mass": 0.000294709314,
         "position": [19, 6.5, 10.5],
-        "velocity": [-0.1, -0.1, -0.1],  # AU/yr
+        "velocity": [-0.1, -0.1, -0.1],  
     }
 ]
 
