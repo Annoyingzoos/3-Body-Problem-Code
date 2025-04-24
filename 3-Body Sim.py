@@ -44,13 +44,13 @@ initial_conditions = [
         "name": "Jupiter",
         "mass": 0.000954536311,
         "position": [22, 7, 9.0],
-        "velocity": [-0, -0.1, -0.1], 
+        "velocity": [-0.1, -0.2, 0.01], 
     },
     {
         "name": "Saturn",
         "mass": 0.000294709314,
         "position": [19, 6.5, 10.5],
-        "velocity": [-0.1, -0.1, -0.1],  
+        "velocity": [0.2, 0.05, -0.05],  
     }
 ]
 
